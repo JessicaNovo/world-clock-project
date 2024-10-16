@@ -12,8 +12,9 @@ function displayTimeAndDate(id, timezone) {
 }
 
 function updateDates() {
-  displayTimeAndDate("#first-city", "Europe/Lisbon");
+  displayTimeAndDate("#first-city", "Europe/Prague");
   displayTimeAndDate("#second-city", "Asia/Tokyo");
+  displayTimeAndDate("#third-city", "Asia/Taipei");
 }
 
 updateDates();
@@ -37,6 +38,7 @@ function updateCity(event) {
         </div>
         <div class="city-time">loading...</div>
       </div>
+      <a class="homepage-link" href="/">👈 All cities</a>
     `;
 
     citiesListElement.innerHTML = newCityElement;
